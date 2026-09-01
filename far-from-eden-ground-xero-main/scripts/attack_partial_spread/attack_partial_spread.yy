@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"attack_partial_spread",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"attack_partial_spread",
+  "parent":{
+    "name":"Attack",
+    "path":"folders/Scripts/Treclops/Attack.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

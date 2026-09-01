@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"rank_assigner",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"rank_assigner",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

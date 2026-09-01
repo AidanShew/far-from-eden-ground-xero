@@ -1,0 +1,1 @@
+instance_destroy(); //destroys the bullet when it gets out of the room.

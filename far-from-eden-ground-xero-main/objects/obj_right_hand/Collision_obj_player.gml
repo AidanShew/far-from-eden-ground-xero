@@ -1,0 +1,1 @@
+if (!obj_player.immunity) player_death();

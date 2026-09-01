@@ -1,0 +1,10 @@
+fire_counter=0;
+exo_fire_limit=20;
+stop_advance_point=650;
+accelerate=0.1;
+screen_margin=17;
+retreat_timer=600;
+exo_hp=15;
+exo_speed=10;
+var position;
+var fire_queue;
