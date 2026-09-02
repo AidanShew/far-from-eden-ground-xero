@@ -1,1 +1,0 @@
-if (sprite_index!=spr_button_selected) { sprite_index=spr_button; }

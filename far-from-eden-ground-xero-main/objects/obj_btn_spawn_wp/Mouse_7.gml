@@ -1,1 +1,0 @@
-if (!instance_exists(obj_wp)) { instance_create_layer(x,y,"Instances", obj_wp);}

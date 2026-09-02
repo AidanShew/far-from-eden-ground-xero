@@ -1,1 +1,0 @@
-if (fade_alpha>=1) room_goto(rm_mission_one);

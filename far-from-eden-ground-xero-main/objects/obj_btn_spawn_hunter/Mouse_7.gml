@@ -1,1 +1,0 @@
-if (instance_number(obj_enemy_hunter)<=15) { hunter_create(1); }

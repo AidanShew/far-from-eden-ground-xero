@@ -1,1 +1,0 @@
-if (!instance_exists(obj_exo)) { exo_create(); }
