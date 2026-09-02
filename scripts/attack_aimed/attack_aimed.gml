@@ -3,7 +3,7 @@ function attack_aimed(){
 		mid_bullet=instance_create_layer(x,y,"Instances", obj_soldier_bullet);
 		mid_bullet.direction=image_angle;
 		mid_bullet.red=red;
-		mid_bullet.speed=25;
+		mid_bullet.speed=35;
 		
 		
 		fire_counter=0;

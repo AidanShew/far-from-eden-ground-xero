@@ -109,26 +109,38 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			
 			y_offset=50;
 			enemy.path = [
-				[path_x1, 100-y_offset], 
-				[path_x1, 200-y_offset], 
-				[path_x2, 200-y_offset], 
-				[path_x2, 300-y_offset], 
-				[path_x1, 300-y_offset], 
-				[path_x1, 400-y_offset],
-				[path_x2, 400-y_offset],
-				[path_x2, 500-y_offset],
-				[path_x1, 500-y_offset],
-				[path_x1, 600-y_offset], 
-				[path_x2, 600-y_offset], 
-				[path_x2, 700-y_offset], 
-				[path_x1, 700-y_offset], 
-				[path_x1, 800-y_offset],
-				[path_x2, 800-y_offset],
-				[path_x2, 900-y_offset],
-				[path_x1, 900-y_offset], 
-				[path_x1, 1000-y_offset],
-				[path_x2, 1000-y_offset],
-				[path_x2, 1100-y_offset],
+				[path_x1, 50], 
+				[path_x1, 150], 
+				
+				[path_x2, 150], 
+				[path_x2, 250], 
+
+				[path_x1, 250], 
+				[path_x1, 350],
+
+				[path_x2, 350],
+				[path_x2, 450],
+
+				[path_x1, 450],
+				[path_x1, 550], 
+
+				[path_x2, 550], 
+				[path_x2, 650], 
+
+				[path_x1, 650], 
+				[path_x1, 750],
+
+				[path_x2, 750],
+				[path_x2, 850],
+
+				[path_x1, 850], 
+				[path_x1, 950],
+
+				[path_x2, 950],
+				[path_x2, 1050],
+				
+				[path_x1, 1050],
+				[path_x1, 1150]
 			];
 			enemy.y=50;
 			enemy.controller=self;
@@ -166,26 +178,28 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			break;
 			
 			case (MOVE.PACK_LEFT):
+			enemy.red=red;
 			enemy.direction=270;
 			enemy.speed=10;
 			enemy.move_type=move_type;
 			enemy.attack_type=attack_type;
 			enemy.y= i==0 ? -50 : -150;
 			
-			if (i==0) enemy.x=550;
-			else enemy.x= i==2 ? 500 : 600;
+			if (i==0) enemy.x=650;
+			else enemy.x= i==2 ? 600 : 700;
 			
 			break;
 			
 			case(MOVE.PACK_RIGHT):
+			enemy.red=red;
 			enemy.direction=270;
 			enemy.speed=10;
 			enemy.attack_type=attack_type;
 			enemy.move_type=MOVE.PACK_RIGHT;
 			enemy.y= i==0 ? -50 : -150;
 			
-			if (i==0) enemy.x=1414;
-			else enemy.x=i==2? 1464 : 1364;
+			if (i==0) enemy.x=1270;
+			else enemy.x=i==2? 1220 : 1320;
 			
 			break;
 			
@@ -227,7 +241,6 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			enemy.direction=180;
 			enemy.image_angle=enemy.direction;
 			enemy.move_type=move_type;
-			enemy.attack_type=ATTACK.AIMED;
 			enemy.revolver_right=true;
 			array_push(obj_revolver_right_p.revolver_soldiers, enemy);
 			break;
@@ -270,7 +283,6 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			enemy.direction=0;
 			enemy.image_angle=enemy.direction;
 			enemy.move_type=move_type;
-			enemy.attack_type=ATTACK.AIMED;
 			enemy.revolver_right=false;
 			array_push(obj_revolver_left_p.revolver_soldiers, enemy);
 			break;

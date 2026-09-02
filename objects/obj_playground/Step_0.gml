@@ -1,12 +1,12 @@
 if (!spawned) {
 	//treclops_create();
 	//create_double_spiral();
-	//create_pack();
 	//create_cross();
 	//create_revolver();
 	//create_single_spiral();
 	spawned=true;
 }
+create_pack();
 //create_helix();
 /*
 create_cross();
@@ -17,5 +17,5 @@ else cross_polarity_timer=pol_limit;
 show_debug_message("Cross Pol Timer: "+string(obj_playground.cross_polarity_timer));
 */
 
-create_circuit();
+//create_circuit();
 //swoop_create();

@@ -1,6 +1,5 @@
 event_inherited();
 sprite_index=red ? spr_soldier_red : spr_soldier_blue;
-show_debug_message(red);
 
 switch (move_type) {
 	case MOVE.RIVER:

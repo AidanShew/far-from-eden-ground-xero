@@ -14,4 +14,16 @@ function move_revolver(){
 	else {
 		fire= rotation_order=0;
 	}
+	
+	if (fire) {
+		if (fire_counter>10) {
+			for (var i=0; i<6; i++) {
+				var bullet=instance_create_layer(x,y,"Instances", obj_soldier_bullet);
+				bullet.direction=move_type==MOVE.REVOLVER_LEFT ? 326.25+(i*11.25) : 146.25+(i*11.25);
+				bullet.red=red;
+			}
+			fire_counter=0;
+		}
+		else fire_counter++;
+	}
 }
