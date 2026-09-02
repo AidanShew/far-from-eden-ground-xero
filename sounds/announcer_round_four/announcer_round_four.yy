@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"announcer_round_four",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.8839002,
+  "exportDir":"",
+  "name":"announcer_round_four",
+  "parent":{
+    "name":"Announcer",
+    "path":"folders/Sounds/Announcer.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"announcer_round_four.wav",
+  "volume":1.0,
+}

@@ -1,0 +1,1 @@
+soldier_create(8, MOVE.DICE, ATTACK.SPREAD);

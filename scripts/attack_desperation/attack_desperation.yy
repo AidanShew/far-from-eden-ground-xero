@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"attack_desperation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"attack_desperation",
+  "parent":{
+    "name":"Attack",
+    "path":"folders/Scripts/Treclops/Attack.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

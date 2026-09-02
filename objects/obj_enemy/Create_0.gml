@@ -1,0 +1,12 @@
+path=[];
+index=0;
+enemy_health=15;
+move_type=noone;
+attack_type=noone;
+mine_alignment=noone;
+red=noone;
+fire_counter=0;
+formation_index=noone;
+default_retreat_timer=240;
+retreat_timer=default_retreat_timer;
+entered=false;

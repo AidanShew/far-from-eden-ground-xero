@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"section_five",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"section_five",
+  "parent":{
+    "name":"Treclops",
+    "path":"folders/Scripts/Treclops.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,9 @@
+event_inherited();
+left_press=false;
+opacity_changer=2.5;
+y_changer=0;
+hide_stats=false;
+text_alpha=1;
+transition=false;
+main_object=undefined;
+main_button=undefined;

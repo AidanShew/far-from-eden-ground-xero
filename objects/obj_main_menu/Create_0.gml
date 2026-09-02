@@ -1,0 +1,1 @@
+if (!instance_exists(obj_player_puppet2)) { instance_create_layer(room_width*0.5,room_height+50,"Instances",obj_player_puppet2); }
