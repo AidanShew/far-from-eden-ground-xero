@@ -11,6 +11,9 @@ spawn_timer2=120;
 pack_spawn_timer=240;
 swoop_spawn_timer=90;
 
+circuit_spawn_timer=600;
+circuit_speed=10;
+
 section=SECTION.ONE;
 
 global.enemies_off_screen=0;

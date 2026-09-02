@@ -2,6 +2,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 	for (var i=0; i<amount; i++) {
 		var enemy=instance_create_layer(0,0,"Instances", obj_enemy_soldier);
 		switch (move_type) {
+			
 			case (MOVE.RIVER):
 			enemy.x-=(100*i);
 			//enemy.red=i%2==0;
@@ -87,27 +88,26 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			enemy.move_type=move_type;
 			break;
 			
-			case (MOVE.CIRCUIT):
+			case (MOVE.CIRCUIT_RIGHT):
+			case (MOVE.CIRCUIT_LEFT):
 			enemy.y=100;
 			var path_x1;
 			var path_x2;
 			var y_offset;
-			if (!left) {
+			if (move_type==MOVE.CIRCUIT_RIGHT) {
 				enemy.x=1500;
 				enemy.direction=180;
 				path_x1=(room_width/2)+50;
 				path_x2=path_x1+320;
-				y_offset=-50;
-				enemy.y=150;
 			}
-			else {
+			else if (move_type==MOVE.CIRCUIT_LEFT) {
 				enemy.x=400;
 				enemy.direction=0;
 				path_x1=(room_width/2)-50;
-				path_x2=path_x1-320;
-				y_offset=50;
-				enemy.y=50;
+				path_x2=path_x1-320;	
 			}
+			
+			y_offset=50;
 			enemy.path = [
 				[path_x1, 100-y_offset], 
 				[path_x1, 200-y_offset], 
@@ -130,8 +130,11 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 				[path_x2, 1000-y_offset],
 				[path_x2, 1100-y_offset],
 			];
-			enemy.speed=10;
+			enemy.y=50;
+			enemy.controller=self;
+			enemy.speed=circuit_speed;
 			enemy.move_type=move_type;
+			enemy.red=red;
 			break;
 			
 			/*

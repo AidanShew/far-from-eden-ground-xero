@@ -1,6 +1,6 @@
 event_inherited();
-if (red) sprite_index=spr_soldier_red;
-else sprite_index=spr_soldier_blue;
+sprite_index=red ? spr_soldier_red : spr_soldier_blue;
+show_debug_message(red);
 
 switch (move_type) {
 	case MOVE.RIVER:
@@ -40,7 +40,8 @@ switch (move_type) {
 	move_cross();
 	break;
 	
-	case MOVE.CIRCUIT:
+	case MOVE.CIRCUIT_RIGHT:
+	case MOVE.CIRCUIT_LEFT:
 	move_circuit();
 	break;
 	

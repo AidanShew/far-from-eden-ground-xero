@@ -24,7 +24,10 @@ function global_enums(){
 		CROSS_LEFT,
 		CROSS_RIGHT,
 		
+		//CIRCUIT
 		CIRCUIT,
+		CIRCUIT_LEFT,
+		CIRCUIT_RIGHT,
 		TARGET,
 		TEST,
 		
